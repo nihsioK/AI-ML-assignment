@@ -5,6 +5,7 @@ It combines both assignments into one study, since both are about the same city 
 
 | Assignment | What it asks for | Where it is |
 |---|---|---|
+| **Case Study Task 1, light version** | Report 8-15 pages, deck 10-15 slides, notebook. Descriptive only | [case-study-1/](case-study-1/) - start here |
 | Research article (`docs/assignment_briefs/assignment_ml_algorithms.pdf`) | 11 algorithms, k-fold with k = 10, Table 1, IMRAD article of 3500 words, 10-15 references | [docs/article.md](docs/article.md), [docs/article.docx](docs/article.docx) |
 | Case Study Task 1 (`docs/assignment_briefs/case_study_task_1.docx`) | Air pollution analysis, report of 8-15 pages, deck of 10-15 slides, notebook | [docs/report.md](docs/report.md), [docs/slides.pptx](docs/slides.pptx), [notebooks/analysis.ipynb](notebooks/analysis.ipynb) |
 
