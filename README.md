@@ -67,13 +67,18 @@ brew install libomp                   # macOS only, needed by XGBoost and LightG
 ```
 
 ```bash
-python src/fetch_open_meteo.py        # refresh the reanalysis data (needs network, ~1 min)
-python src/build_features.py          # -> data/processed/karaganda_modelling.csv
-python src/run_models.py              # -> results/table1*.csv, predictions, importances (~6 min)
-python src/figures.py                 # -> results/figures/*.png, 12 figures
-python src/make_documents.py          # -> docs/article.docx, report.docx, slides.pptx
-python src/make_notebook.py --check   # -> notebooks/analysis.ipynb, then runs every cell
+python src/fetch_open_meteo.py   # refresh ERA5 + CAMS from Open-Meteo        needs network, ~60 s
+python src/build_features.py     # -> data/processed/karaganda_modelling.csv              0.2 s
+python src/run_models.py         # -> results/table1_experiment_{A,B,C,D}.csv + diagnostics 350 s
+python src/figures.py            # -> results/figures/*.png, 12 figures                   1.3 s
+python src/make_documents.py     # -> docs/article.docx, report.docx, slides.pptx         0.3 s
+python src/make_notebook.py      # -> notebooks/analysis.ipynb                            0.1 s
+python src/verify.py             # cross-check every number in the write-ups vs results/  0.2 s
 ```
+
+Only step 1 needs the network; everything else runs offline on what is already in `data/raw/`.
+Timings are wall clock on an M-series Mac. `make_notebook.py --check` additionally executes all
+14 notebook cells, which repeats the benchmark and therefore takes about as long as step 3.
 
 The bulletin parsers only need re-running when new bulletins are added:
 
