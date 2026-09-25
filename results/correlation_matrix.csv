@@ -1,0 +1,13 @@
+,pm2_5,ctx_pm10,ctx_nitrogen_dioxide,ctx_sulphur_dioxide,ctx_carbon_monoxide,ctx_ozone
+temperature_2m_mean,-0.095,-0.032,-0.388,-0.308,-0.563,0.257
+diurnal_range,0.125,0.129,-0.08,-0.006,-0.14,0.259
+wind_speed_10m_mean,-0.405,-0.246,-0.127,-0.234,-0.366,-0.049
+wind_speed_10m_max,-0.361,-0.174,-0.154,-0.254,-0.406,-0.008
+blh_min_m,-0.378,-0.325,-0.18,-0.204,-0.217,-0.11
+blh_mean_m,-0.365,-0.296,-0.432,-0.413,-0.615,0.295
+ventilation_index,-0.385,-0.287,-0.293,-0.313,-0.459,0.092
+surface_pressure_mean,0.095,-0.012,0.294,0.262,0.395,-0.254
+relative_humidity_2m_mean,0.074,0.066,0.225,0.166,0.415,-0.298
+precipitation_sum,-0.056,0.044,-0.101,-0.135,-0.149,-0.053
+snowfall_sum,-0.18,-0.138,0.005,-0.033,-0.005,-0.07
+heating_degree_days,0.096,0.031,0.399,0.309,0.569,-0.218

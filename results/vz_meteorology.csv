@@ -1,0 +1,5 @@
+variable,ordinary_median,high_pollution_median
+"Mean temperature, C",-4.5,-11.1
+"Mean wind speed, km/h",16.4,8.3
+"Minimum mixing depth, m",135.0,30.0
+"Surface pressure, hPa",956.8,961.8
